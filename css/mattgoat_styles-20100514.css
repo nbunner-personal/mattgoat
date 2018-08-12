@@ -1,0 +1,77 @@
+/* @group common and main structure */
+body, html, ul, li, dl, dt, dd, form, h1, h2 , h3, h4, h5, p {margin: 0; padding: 0;}
+ul, li, ul li {list-style-type: none;}     
+
+body {background: #fff; color: #333; font: 100.1%  "Lucida Grande", Lucida, Verdana, sans-serif; text-align: center;}
+#main_container {margin: 0 auto; position: relative; width: 990px;}
+#header {height: 170px;}
+#main_links {left: 0; position: absolute; top: 50px;}
+a#link_home,  a#link_gallery, a#link_biog, a#link_contact, a#link_links {background-image: url(/images/buttons/main_links.png); background-repeat: no-repeat; display: block; float: left; height: 70px;}
+a#link_home span,  a#link_gallery span, a#link_biog span, a#link_contact span, a#link_links span {display: none;}
+a#link_home {background-position: 0 0; width: 95px;}
+a#link_gallery {background-position: -95px 0; width: 155px;}
+a#link_biog {background-position: -250px 0; width: 105px;}
+a#link_contact {background-position: -355px 0; width: 150px;}
+a#link_links {background-position: -505px 0; width: 94px;}
+a#link_home:hover {background-position: 0 -140px;}
+a#link_gallery:hover {background-position: -95px -140px;}
+a#link_biog:hover {background-position: -250px -140px;}
+a#link_contact:hover {background-position: -355px -140px;}
+a#link_links:hover {background-position: -505px -140px;}
+#main_content {text-align: left;}
+
+body#index a#link_index {background-position: 0 -70px;}
+body#biog a#link_biog {background-position: -250px -70px;}
+body#contact a#link_contact {background-position: -355px -70px;}
+body#links a#link_links {background-position: -505px -70px;}
+body#gallery a#link_gallery {background-position: -95px -70px;}
+/* @end */
+
+/* @group text  */
+#main_container h1 {background-image: url(/images/backgrounds/main_logo.png); display: block; height: 142px; position: absolute; right: 0; top: 25px; width: 236px;}
+a:link, a:visited {color: #b42dee; text-decoration: none;}
+a:hover {color: #30a8f6; text-decoration: underline;}
+/* @end */
+
+/* @group page specific styles */
+/* home */
+body#home #main_container {background: url(/images/backgrounds/contentback-homeleft.jpg) no-repeat 0 50px; min-height: 640px;}
+body#home #main_content {background: url(/images/backgrounds/contentback-homeright.jpg) no-repeat 100% 150px; min-height: 570px; height: auto !important; height: 770px; padding: 200px 0 0;}
+body#home a#link_home, body#home a#link_gallery, body#home a#link_biog, body#home a#link_contact, body#home a#link_links {position: absolute;}
+body#home a#link_biog {left: 490px; top: 540px;}
+body#home a#link_gallery {left: 165px; top: 600px;}
+body#home a#link_contact {left: 490px; top: 660px;}
+body#home a#link_links {right: 90px; top: 680px;}
+body#home a#gallery_link-1 span, body#home a#gallery_link-2 span {display: none;}
+body#home a#gallery_link-1 {display: block; left: 0; height: 440px; position: absolute; top: 160px; width: 270px;}
+body#home a#gallery_link-2 {display: block; right: 0; height: 490px; position: absolute; top: 170px; width: 360px;}
+
+/* biog */
+body#biog #main_content {background: url(/images/backgrounds/contentback-biog.png) no-repeat 0 0; min-height: 550px; height: auto !important; height: 550px; padding: 20px 20px 20px 220px;}
+body#contact #main_content {background: url(/images/backgrounds/contentback-contact.jpg) no-repeat 0 50%; min-height: 350px; height: auto !important; height: 550px; padding: 20px 150px 360px;}
+body#links #main_content {background: url(/images/backgrounds/contentback-links.jpg) no-repeat 0 50%; min-height: 350px; height: auto !important; height: 550px; padding: 20px 150px 360px;}
+
+/* gallery */
+ul#gallery {overflow: hidden;}
+ul#gallery li {float: left; margin: 20px;}
+ul#gallery li a:link, ul#gallery li a:visited {border: 1px solid #cacaca; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; display: block; padding: 2px;}
+ul#gallery li a:hover {border-color: #30a8f6;}
+ul#gallery li a img {border: none;}
+
+/* @end */
+
+
+
+
+
+
+
+/* @group sneaky hacks */
+/* css background image replacement */
+.image_replace {display:-moz-inline-box; display: inline-block; background:transparent none  0 0 no-repeat; text-indent:-3000px; font:0/0 Arial; overflow:hidden; color:rgba(255,255,255,0); vertical-align:bottom;} /*  text-indent set to 0 elsewhere for both IE6 & IE7 */
+
+
+/* @end */
+
+
+
